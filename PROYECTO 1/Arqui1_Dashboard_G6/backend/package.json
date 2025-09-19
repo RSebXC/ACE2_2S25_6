@@ -1,0 +1,35 @@
+{
+  "name": "sensor-backend",
+  "version": "2.0.0",
+  "description": "Backend para dashboard de sensores - Migrado a Python",
+  "main": "app.py",
+  "scripts": {
+    "start": "python app.py",
+    "start-js": "node getSensorData.js",
+    "dev": "python app.py",
+    "dev-js": "nodemon getSensorData.js",
+    "install-python-deps": "pip install -r requirements.txt",
+    "start-windows": "start.bat",
+    "start-powershell": "powershell -ExecutionPolicy Bypass -File start.ps1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "mongodb": "^6.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": ["flask", "python", "mongodb", "sensors", "api"],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "python": ">=3.8"
+  },
+  "python-dependencies": {
+    "Flask": "2.3.3",
+    "Flask-CORS": "4.0.0", 
+    "pymongo": "4.5.0",
+    "dnspython": "2.4.2"
+  }
+}
