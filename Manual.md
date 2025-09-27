@@ -134,10 +134,10 @@ npm start
 
 #### 📋 Topics del Sistema
 ```
-julio/sensores     → 📊 Datos de sensores (CSV)
-julio/prueba       → 💓 Heartbeat cada 5s
-julio/cmd          → 🎮 Comandos al sistema
-julio/status       → 📈 Estado general
+silo/sensores     → 📊 Datos de sensores (CSV)
+silo/prueba       → 💓 Heartbeat cada 5s
+silo/cmd          → 🎮 Comandos al sistema
+silo/status       → 📈 Estado general
 ```
 
 #### 📥 Formato de Datos
@@ -259,7 +259,7 @@ MQTT_PORT=1883
 python app.py
 
 # Ver logs MQTT (terminal separada)
-mosquitto_sub -h test.mosquitto.org -t 'julio/#' -v
+mosquitto_sub -h test.mosquitto.org -t 'silo/#' -v
 
 # Verificar datos en MongoDB
 # Usar MongoDB Compass o Atlas interface
@@ -293,21 +293,13 @@ mosquitto_sub -h test.mosquitto.org -t 'julio/#' -v
 
 ## 👥 Equipo de Desarrollo
 
-- **👨‍💻 Julio**: Desarrollo hardware y ESP32
 - **👥 Grupo 6**: Frontend React y integración
 - **🎓 Curso**: Arquitectura de Computadoras 1 - 2S25
-
-## 📞 Soporte y Contacto
 
 ### 🆘 Problemas Comunes
 - **❌ Error de conexión MQTT**: Verificar WiFi y broker
 - **📊 Sin datos en dashboard**: Revisar backend y MongoDB
 - **🔌 Hardware no responde**: Verificar conexiones y alimentación
-
-### 📧 Contacto
-- **📚 Documentación**: Ver archivos README individuales
-- **🐛 Issues**: Reportar en repositorio del proyecto
-- **💬 Soporte**: Contactar al equipo de desarrollo
 
 ---
 
